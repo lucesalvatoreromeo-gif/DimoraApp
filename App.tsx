@@ -260,13 +260,14 @@ const App: React.FC = () => {
                     <clipboardlist classname="w-3 h-3"/>
                     {t.checkoutChecklist}
                   </h5>
-                  <div classname="space-y-2">
-                    {checklistKeys.map((key) => (
-                      <button
-  key={key}
-  onClick={() => toggleChecklistItem(key)}
-  className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white/50 transition-colors"
->
+                 <div className="space-y-2">
+  {checklistKeys.map((key) => (
+    <button
+      key={key}
+      type="button"
+      onClick={() => toggleChecklistItem(key)}
+      className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white/50 transition-colors text-left group"
+    >
   {/* button children here */}
   { /* e.g. label or icon */ }
 </button>
