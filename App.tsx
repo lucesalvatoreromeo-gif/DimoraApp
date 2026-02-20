@@ -43,7 +43,7 @@ import {
 import { GuideData, Language, TRANSLATIONS } from './types';
 import { INITIAL_GUIDE_DATA } from './constants';
 
-const FLAGS: Record<language, string=""> = {
+const FLAGS: Record<Language, string> = {
   [Language.IT]: "https://flagcdn.com/w80/it.png",
   [Language.EN]: "https://flagcdn.com/w80/gb.png",
   [Language.DE]: "https://flagcdn.com/w80/de.png",
