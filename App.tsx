@@ -262,9 +262,14 @@ const App: React.FC = () => {
                   </h5>
                   <div classname="space-y-2">
                     {checklistKeys.map((key) => (
-                      <button key="{key}" onclick="{()" ==""> toggleChecklistItem(key)}
-                        className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white/50 transition-colors text-left group"
-                      >
+                      <button
+  key={key}
+  onClick={() => toggleChecklistItem(key)}
+  className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white/50 transition-colors"
+>
+  {/* button children here */}
+  { /* e.g. label or icon */ }
+</button>
                         <div classname="{`w-5" h-5="" rounded="" border-2="" flex="" items-center="" justify-center="" transition-all="" ${="" checkliststate[key]="" ?="" 'bg-rose-500="" border-rose-500'="" :="" 'border-rose-200="" bg-white="" group-hover:border-rose-300'="" }`}="">
                           {checklistState[key] && <check classname="w-3 h-3 text-white"/>}
                         </div>
