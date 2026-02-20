@@ -189,12 +189,16 @@ const App: React.FC = () => {
       
       // Phone match
       if (part.trim().match(/^\+39/)) {
-         return (
-          <a key="{i}" href="{`tel:${part.replace(/\s+/g," '')}`}="" classname="text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1 transition-colors hover:underline decoration-amber-500/30">
-            {part}
-          </a>
-         );
-      }
+  return (
+    <a
+      key={i}
+      href={`tel:${part.replace(/\s+/g, "")}`}
+      className="text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1 transition-colors hover:underline decoration-amber-500/30"
+    >
+      {part}
+    </a>
+  );
+}
 
       return part;
     });
